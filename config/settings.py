@@ -54,12 +54,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Настройка базы данных (SQLite локально, PostgreSQL на Render)
 DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'twitch_db',
+        'USER': 'postgres',
+        'PASSWORD': 'iphone16promaxtop',  
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
