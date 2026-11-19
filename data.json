@@ -1,0 +1,1615 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-11-19T19:50:40.736Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "89",
+    "object_repr": "des0ut",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-11-19T19:52:22.986Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "81",
+    "object_repr": "Bratishkinoff",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-11-19T19:53:25.474Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "82",
+    "object_repr": "Buster",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-11-19T19:54:38.523Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "83",
+    "object_repr": "StRoGo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-11-19T19:55:04.514Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "83",
+    "object_repr": "StRoGo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-11-19T19:56:05.056Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "84",
+    "object_repr": "Stariy_Bog",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-11-19T19:56:46.506Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "84",
+    "object_repr": "Stariy_Bog",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-11-19T19:57:18.934Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "85",
+    "object_repr": "m3wsu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-11-19T19:58:56.359Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "86",
+    "object_repr": "mokrivskyi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-11-19T19:59:45.251Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "87",
+    "object_repr": "zxcursed",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-11-19T20:00:24.942Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "88",
+    "object_repr": "Deko",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-11-19T20:01:29.153Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "90",
+    "object_repr": "Nix",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-11-19T20:01:45.732Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "91",
+    "object_repr": "ALOHADANCE",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-11-19T20:01:57.013Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "91",
+    "object_repr": "ALOHADANCE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-11-19T20:02:57.105Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "92",
+    "object_repr": "Iceberg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-11-19T20:03:52.071Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "93",
+    "object_repr": "RAMZES666",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-11-19T20:04:30.799Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "94",
+    "object_repr": "SilverName",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-11-19T20:05:00.336Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "95",
+    "object_repr": "PashaBiceps",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-11-19T20:05:36.497Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "96",
+    "object_repr": "s1mple",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-11-19T20:06:18.746Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "89",
+    "object_repr": "des0ut",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-11-19T20:11:28.280Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "97",
+    "object_repr": "Dmitry_Lixxx",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-11-19T20:12:59.451Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "97",
+    "object_repr": "Dmitry_Lixxx",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-11-19T20:13:19.480Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "97",
+    "object_repr": "Dmitry_Lixxx",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-11-19T20:13:53.692Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "97",
+    "object_repr": "Dmitry_Lixxx",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 8,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 8,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 8,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 8,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 7,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 7,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 7,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 7,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$rs79tsaCIeOtoodFNWo097$AOeaRd15lk+iDFRe2bSLDGv+AlMi5+YayDup8G1YLjo=",
+    "last_login": "2026-11-18T18:17:55.638Z",
+    "is_superuser": true,
+    "username": "skywalker",
+    "first_name": "",
+    "last_name": "",
+    "email": "skywalker@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-18T18:14:45.054Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "streamers",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "streamers",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jzg53yp25k8w34lhkdsrqggdg16aymnf",
+  "fields": {
+    "session_data": ".eJxVjLsOwjAMAP_FM4rSpnnQkb3fENmxTQuokfqYEP-OKnWA9e50b8i4b2PeV1nyxNBDC5dfRlieMh-CHzjfqyl13paJzJGY065mqCyv29n-DUZcR-hB9NpaReWEkRsV0iZ4jcknrxQpkmOJvnPimVOwXWBqQlFUh1Rsi_D5AhtjOVw:1xTkEF:Huolno0HFZvm_hdGo1rOatkgiX3BouUykGtnbbEI_EQ",
+    "expire_date": "2026-12-02T18:17:55.641Z"
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 81,
+  "fields": {
+    "title": "Bratishkinoff",
+    "slug": "bratishkinoff-0",
+    "author": 2,
+    "content": "Король СНГ-стриминга...",
+    "publish": "2026-11-18T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/bratishkinoff",
+    "avatar": "avatars/images_zkAAIJ4.jpg",
+    "likes": 2
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 82,
+  "fields": {
+    "title": "Buster",
+    "slug": "buster-1",
+    "author": 2,
+    "content": "Легенда, с которой начался движ...",
+    "publish": "2026-11-17T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/buster",
+    "avatar": "avatars/strimer-buster-stal-gostem-novogo-vypuska-shou-sessiya_17110287991808551485_Ye2dbRX.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 83,
+  "fields": {
+    "title": "StRoGo",
+    "slug": "strogo-2",
+    "author": 2,
+    "content": "Ворвался в мировой топ-10 Twitch...",
+    "publish": "2026-11-16T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/strogo",
+    "avatar": "avatars/images_2.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 84,
+  "fields": {
+    "title": "Stariy_Bog",
+    "slug": "stariy_bog-3",
+    "author": 2,
+    "content": "Ночные стримы и культовый жест...",
+    "publish": "2026-11-15T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/stariy_bog",
+    "avatar": "avatars/6844cc01446288741ee72a58bfd95_H8R0uJN.webp",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 85,
+  "fields": {
+    "title": "m3wsu",
+    "slug": "m3wsu-4",
+    "author": 2,
+    "content": "4к ELO в CS2...",
+    "publish": "2026-11-14T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/m3wsu",
+    "avatar": "avatars/images_4.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 86,
+  "fields": {
+    "title": "mokrivskyi",
+    "slug": "mokrivskyi-5",
+    "author": 2,
+    "content": "Забрал сердца миллионов...",
+    "publish": "2026-11-13T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/mokrivskyi",
+    "avatar": "avatars/f3669797-b5a0-5ce0-b78b-b16ae0482752_naMkWHY.webp",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 87,
+  "fields": {
+    "title": "zxcursed",
+    "slug": "zxcursed-6",
+    "author": 2,
+    "content": "Самый скандальный стример СНГ...",
+    "publish": "2026-11-12T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/zxcursed",
+    "avatar": "avatars/images_5.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 88,
+  "fields": {
+    "title": "Deko",
+    "slug": "deko-7",
+    "author": 2,
+    "content": "Главное лицо CS2 в СНГ...",
+    "publish": "2026-11-11T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/deko",
+    "avatar": "avatars/c6ca4994508629ec2ace2feedcb7abeb_aBYJoaC.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 89,
+  "fields": {
+    "title": "des0ut",
+    "slug": "des0ut-8",
+    "author": 2,
+    "content": "Утренний стример...",
+    "publish": "2026-11-10T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/des0ut",
+    "avatar": "avatars/04a6ef2a-4ef1-4e1b-8bca-cf9f0e41ca11_uIY0W3q.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 90,
+  "fields": {
+    "title": "Nix",
+    "slug": "nix-9",
+    "author": 2,
+    "content": "Голос Dota 2...",
+    "publish": "2026-11-09T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/nix",
+    "avatar": "avatars/Aleksandr-Nix-Levin-6440f17674e45_NNDHsv1.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 91,
+  "fields": {
+    "title": "ALOHADANCE",
+    "slug": "alohadance-10",
+    "author": 2,
+    "content": "Король непредсказуемости...",
+    "publish": "2026-11-08T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/alohadance",
+    "avatar": "avatars/images_6.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 92,
+  "fields": {
+    "title": "Iceberg",
+    "slug": "iceberg-11",
+    "author": 2,
+    "content": "Не боится говорить то, что думает...",
+    "publish": "2026-11-07T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/iceberg",
+    "avatar": "avatars/fef0b34f9424436dec7e2b91cf6c00d9_f05JSCu.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 93,
+  "fields": {
+    "title": "RAMZES666",
+    "slug": "ramzes666-12",
+    "author": 2,
+    "content": "Титулованный про-игрок...",
+    "publish": "2026-11-06T18:20:12Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/ramzes666",
+    "avatar": "avatars/ramzes666-commented-ban-twitch-18947_ZhWeetR.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 94,
+  "fields": {
+    "title": "SilverName",
+    "slug": "silvername-13",
+    "author": 2,
+    "content": "Легенда Hearthstone в СНГ...",
+    "publish": "2026-11-05T18:20:13Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/silvername",
+    "avatar": "avatars/images_7.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 95,
+  "fields": {
+    "title": "PashaBiceps",
+    "slug": "pashabiceps-14",
+    "author": 2,
+    "content": "Поляк с сердцем СНГ-гиганта...",
+    "publish": "2026-11-04T18:20:13Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/pashabiceps",
+    "avatar": "avatars/original_UaYCl8m.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 96,
+  "fields": {
+    "title": "s1mple",
+    "slug": "s1mple-15",
+    "author": 2,
+    "content": "Величайший игрок в истории CS:GO...",
+    "publish": "2026-11-03T18:20:13Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/s1mple",
+    "avatar": "avatars/1611930070_ava-konfig-s1mple-2021-dlya-cs-go_qCIkPkR.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "streamers.post",
+  "pk": 97,
+  "fields": {
+    "title": "Dmitry_Lixxx",
+    "slug": "dmitry_lixxx",
+    "author": 2,
+    "content": "Отец твича, батя всея стримерства",
+    "publish": "2026-11-19T20:07:24Z",
+    "status": "PB",
+    "twitch_url": "https://www.twitch.tv/dmitry_lixxx",
+    "avatar": "avatars/images_8.jpg",
+    "likes": 0
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "СНГ",
+    "slug": "снг"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Хайп",
+    "slug": "хайп"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "CS2",
+    "slug": "cs2"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "89SQUAD",
+    "slug": "89squad"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Олдскул",
+    "slug": "олдскул"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Разговорный жанр",
+    "slug": "разговорный-жанр"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "Forbes",
+    "slug": "forbes"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "Топ-10",
+    "slug": "топ-10"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "Гринд",
+    "slug": "гринд"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "Dota 2",
+    "slug": "dota-2"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "Мемы",
+    "slug": "мемы"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "Ночной эфир",
+    "slug": "ночной-эфир"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "High Elo",
+    "slug": "high-elo"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "Скилл",
+    "slug": "скилл"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "Украина",
+    "slug": "украина"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 16,
+  "fields": {
+    "name": "Ламповый вайб",
+    "slug": "ламповый-вайб"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 17,
+  "fields": {
+    "name": "IRL",
+    "slug": "irl"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 18,
+  "fields": {
+    "name": "Скандалы",
+    "slug": "скандалы"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 19,
+  "fields": {
+    "name": "Эмоции",
+    "slug": "эмоции"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 20,
+  "fields": {
+    "name": "Утренний эфир",
+    "slug": "утренний-эфир"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 21,
+  "fields": {
+    "name": "Стабильность",
+    "slug": "стабильность"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 22,
+  "fields": {
+    "name": "Аналитика",
+    "slug": "аналитика"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 23,
+  "fields": {
+    "name": "Киберспорт",
+    "slug": "киберспорт"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 24,
+  "fields": {
+    "name": "Юмор",
+    "slug": "юмор"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 25,
+  "fields": {
+    "name": "Шоу",
+    "slug": "шоу"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 26,
+  "fields": {
+    "name": "Разборки",
+    "slug": "разборки"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 27,
+  "fields": {
+    "name": "Про-игрок",
+    "slug": "про-игрок"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 28,
+  "fields": {
+    "name": "Титулы",
+    "slug": "титулы"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 29,
+  "fields": {
+    "name": "Hearthstone",
+    "slug": "hearthstone"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 30,
+  "fields": {
+    "name": "Уют",
+    "slug": "уют"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 31,
+  "fields": {
+    "name": "Польша",
+    "slug": "польша"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 32,
+  "fields": {
+    "name": "Легенда",
+    "slug": "легенда"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 197,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 81
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 198,
+  "fields": {
+    "tag": 2,
+    "content_type": 8,
+    "object_id": 81
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 199,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 81
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 200,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 82
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 201,
+  "fields": {
+    "tag": 5,
+    "content_type": 8,
+    "object_id": 82
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 202,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 83
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 203,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 83
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 204,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 84
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 205,
+  "fields": {
+    "tag": 10,
+    "content_type": 8,
+    "object_id": 84
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 206,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 85
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 207,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 85
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 208,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 86
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 209,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 86
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 210,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 87
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 211,
+  "fields": {
+    "tag": 10,
+    "content_type": 8,
+    "object_id": 87
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 212,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 88
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 213,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 88
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 214,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 89
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 215,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 89
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 216,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 90
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 217,
+  "fields": {
+    "tag": 10,
+    "content_type": 8,
+    "object_id": 90
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 218,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 91
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 219,
+  "fields": {
+    "tag": 10,
+    "content_type": 8,
+    "object_id": 91
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 220,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 92
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 221,
+  "fields": {
+    "tag": 10,
+    "content_type": 8,
+    "object_id": 92
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 222,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 93
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 223,
+  "fields": {
+    "tag": 10,
+    "content_type": 8,
+    "object_id": 93
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 224,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 94
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 225,
+  "fields": {
+    "tag": 29,
+    "content_type": 8,
+    "object_id": 94
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 226,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 95
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 227,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 95
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 228,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 96
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 229,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 96
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 230,
+  "fields": {
+    "tag": 3,
+    "content_type": 8,
+    "object_id": 97
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 231,
+  "fields": {
+    "tag": 1,
+    "content_type": 8,
+    "object_id": 97
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 232,
+  "fields": {
+    "tag": 2,
+    "content_type": 8,
+    "object_id": 97
+  }
+}
+]

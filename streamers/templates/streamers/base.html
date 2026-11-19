@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Twitch Blog{% endblock %}</title>
+    <!-- Подключаем Bootstrap 5 (Dark Mode) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Переопределяем цвета для тёмной темы */
+        body { 
+            background-color: #0e0e10; /* Глубокий тёмный фон, как у Twitch */
+            color: #efeff1; 
+        }
+        .navbar { 
+            background-color: #18181b; /* Тёмно-серый навбар */
+            border-bottom: 1px solid #2d2d31;
+        }
+        .navbar-brand, .nav-link { color: #efeff1 !important; }
+        .nav-link:hover { color: #a970ff !important; } /* Фиолетовый при наведении */
+        
+        .card {
+            background-color: #18181b; /* Карточки тоже тёмные */
+            border: 1px solid #2d2d31;
+            color: #efeff1;
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+            transition: 0.3s; 
+            box-shadow: 0 10px 20px rgba(100, 65, 165, 0.3); /* Фиолетовая тень */
+            border-color: #6441a5;
+        }
+        
+        .text-muted { color: #adadb8 !important; } /* Более светлый серый для текста */
+        .border-bottom { border-color: #2d2d31 !important; }
+        .badge.bg-light { 
+            background-color: #2d2d31 !important; 
+            color: #efeff1 !important; 
+        }
+        
+        .btn-primary {
+            background-color: #6441a5;
+            border-color: #6441a5;
+        }
+        .btn-primary:hover {
+            background-color: #7d5bbe;
+            border-color: #7d5bbe;
+        }
+        
+        .tag-link { text-decoration: none; color: #a970ff; font-weight: bold; }
+        
+        .form-control {
+            background-color: #0e0e10;
+            border: 1px solid #2d2d31;
+            color: #efeff1;
+        }
+        .form-control:focus {
+            background-color: #0e0e10;
+            color: #efeff1;
+            border-color: #6441a5;
+            box-shadow: 0 0 0 0.25rem rgba(100, 65, 165, 0.25);
+        }
+        
+        footer {
+            border-top: 1px solid #2d2d31;
+            color: #adadb8 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'streamers:post_list' %}">
+                <i class="fab fa-twitch me-2"></i> Twitch Streamers
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'streamers:post_list' %}">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'streamers:latest_feed' %}"><i class="fas fa-rss"></i> RSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/">Админка</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- БАННЕР С КАРТИНКОЙ -->
+    <div class="container mt-4">
+        <img src="https://sun9-51.vkuserphoto.ru/s/v1/ig2/WLYBtmQpyYvB2Mbfkff1LOEYivMCdRXt5sHTmp_vPKWJ6fXt_2pGAH-AsagC_lzzYaFuP10_ICGLuGgW9XQaaL5S.jpg?quality=95&as=32x26,48x40,72x59,108x89,160x132,240x198,360x297,480x396,540x446,640x528,720x594,1080x891,1280x1056,1309x1080&from=bu&u=Z1XCnFC8RHjI4nBYXj6cSCOTddxKTCFqPb53aDihuLI" 
+             alt="Twitch Streamers Banner" 
+             class="img-fluid rounded w-100" 
+             style="max-height: 400px; object-fit: cover; border: 1px solid #2d2d31; margin-bottom: 20px;">
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Подвал -->
+    <footer class="text-center py-4 mt-5">
+        &copy; 2026 Twitch Blog. Все права защищены.
+    </footer>
+
+    <!-- Bootstrap JS (для выпадающих меню) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Блок для скриптов (сюда мы вставим AJAX для лайков) -->
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,65 @@
+{% extends 'streamers/base.html' %}
+
+{% block title %}Стримеры Twitch{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4 text-center">Медийные стримеры Twitch</h1>
+
+    <!-- Заголовок при фильтрации по тегу -->
+    {% if tag %}
+        <div class="text-center mb-4">
+            <h2 class="mb-3">Стримеры с тегом "{{ tag.name }}"</h2>
+            <a href="{% url 'streamers:post_list' %}" class="btn btn-outline-secondary">← Показать всех</a>
+        </div>
+    {% endif %}
+
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <!-- Аватарка -->
+                    {% if post.avatar %}
+                        <img src="{{ post.avatar.url }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
+                    {% else %}
+                        <div class="bg-secondary text-white text-center py-5" style="height: 200px;">Нет фото</div>
+                    {% endif %}
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text text-muted">{{ post.content|truncatewords:15 }}</p>
+                        
+                        <!-- Теги (ТЕПЕРЬ КЛИКАБЕЛЬНЫЕ) -->
+                        <div class="mb-2">
+                            {% for tag in post.tags.all %}
+                                <a href="{% url 'streamers:post_list_by_tag' tag.name %}" class="badge bg-light text-dark text-decoration-none">
+                                    #{{ tag.name }}
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer bg-white border-top-0">
+                        <a href="{% url 'streamers:post_detail' post.id %}" class="btn btn-primary btn-sm w-100" style="background-color: #6441a5; border: none;">Смотреть профиль</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12 text-center">
+                <p>Пока нет ни одного поста. Добавьте их через админку!</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Пагинация -->
+    <div class="pagination justify-content-center mt-4">
+        {% if is_paginated %}
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-outline-primary me-2">Назад</a>
+            {% endif %}
+            <span class="btn btn-light disabled">Стр. {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}</span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-primary ms-2">Вперед</a>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock %}

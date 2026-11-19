@@ -1,0 +1,37 @@
+{% extends 'streamers/base.html' %}
+
+{% block title %}Поделиться {{ post.title }}{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            {% if sent %}
+                <div class="alert alert-success mt-4" role="alert">
+                    <h4 class="alert-heading">Успешно отправлено!</h4>
+                    <p>Письмо с профилем "{{ post.title }}" было успешно отправлено на {{ form.cleaned_data.to }}.</p>
+                    <hr>
+                    <a href="{% url 'streamers:post_detail' post.id %}" class="btn btn-primary" style="background-color: #6441a5; border: none;">Вернуться к стримеру</a>
+                </div>
+            {% else %}
+                <div class="card shadow-sm mt-4">
+                    <div class="card-body">
+                        <h2 class="mb-3">Поделиться профилем "{{ post.title }}"</h2>
+                        <form method="post">
+                            {% csrf_token %}
+                            {% for field in form %}
+                                <div class="mb-3">
+                                    <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                                    {{ field }}
+                                    {% if field.errors %}
+                                        <div class="text-danger small">{{ field.errors }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                            <button type="submit" class="btn btn-primary" style="background-color: #6441a5; border: none;">Отправить письмо</button>
+                        </form>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

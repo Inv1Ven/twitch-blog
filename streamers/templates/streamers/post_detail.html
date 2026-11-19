@@ -1,0 +1,168 @@
+{% extends 'streamers/base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            
+            <!-- Блок профиля стримера (Шапка) -->
+            <div class="card shadow-sm mb-4 border-0">
+                <div class="card-body p-4">
+                    <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+                        <!-- Аватар (круглый) -->
+                        {% if post.avatar %}
+                            <img src="{{ post.avatar.url }}" alt="{{ post.title }}" class="rounded-circle me-md-4 mb-3 mb-md-0 shadow" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #6441a5;">
+                        {% else %}
+                            <div class="rounded-circle me-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center bg-secondary text-white shadow" style="width: 150px; height: 150px; font-size: 40px;">
+                                {{ post.title|first }}
+                            </div>
+                        {% endif %}
+
+                        <!-- Инфо о стримере -->
+                        <div class="flex-grow-1 text-center text-md-start">
+                            <h1 class="display-5 fw-bold mb-1" style="color: #6441a5;">{{ post.title }}</h1>
+                            <p class="text-muted mb-3"><i class="far fa-calendar-alt me-1"></i> В блоге с {{ post.publish|date:"d.m.Y" }}</p>
+                            
+                            <!-- Теги -->
+                            <div class="mb-3">
+                                {% for tag in post.tags.all %}
+                                    <span class="badge rounded-pill bg-light text-dark border me-1">#{{ tag.name }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Кнопки действия -->
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2 mt-3">
+                                {% if post.twitch_url %}
+                                    <a href="{{ post.twitch_url }}" target="_blank" class="btn btn-danger shadow-sm px-4">
+                                        <i class="fab fa-twitch me-2"></i> Смотреть на Twitch
+                                    </a>
+                                {% endif %}
+                                
+                                <!-- Кнопка лайка -->
+                                <button id="like-button" class="btn btn-outline-dark shadow-sm px-4" data-post-id="{{ post.id }}">
+                                    <i class="fas fa-heart text-danger me-1"></i> <span id="like-count">{{ post.likes }}</span>
+                                </button>
+
+                                <!-- Кнопка Поделиться -->
+                                <a href="{% url 'streamers:post_share' post.id %}" class="btn btn-outline-secondary shadow-sm px-4">
+                                    <i class="fas fa-envelope me-1"></i> Поделиться
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок с описанием (Био) -->
+            <div class="card shadow-sm mb-4 border-0">
+                <div class="card-body p-4">
+                    <h4 class="mb-3 border-bottom pb-2">О стримере</h4>
+                    <div class="content" style="font-size: 1.1rem; line-height: 1.8;">
+                        {{ post.content|linebreaks }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок комментариев -->
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <h4 class="mb-4 border-bottom pb-2">Комментарии ({{ comments.count }})</h4>
+                    
+                    <!-- Список комментариев -->
+                    {% for comment in comments %}
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0">
+                                <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    {{ comment.name|first }}
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="mb-1 fw-bold">{{ comment.name }} <small class="text-muted fw-normal ms-2">{{ comment.created|date:"d.m.Y H:i" }}</small></h6>
+                                <p class="mb-0 text-secondary">{{ comment.body }}</p>
+                            </div>
+                        </div>
+                    {% empty %}
+                        <p class="text-muted text-center py-3">Пока нет комментариев. Будьте первым!</p>
+                    {% endfor %}
+
+                    <hr class="my-4">
+
+                    <!-- Форма добавления комментария -->
+                    <h5 class="mb-3">Оставить комментарий</h5>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-muted small">Ваше имя</label>
+                                {{ comment_form.name }}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-muted small">Email (не публикуется)</label>
+                                {{ comment_form.email }}
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small">Комментарий</label>
+                            {{ comment_form.body }}
+                        </div>
+                        <button type="submit" class="btn text-white px-4" style="background-color: #6441a5;">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("=== СКРИПТ ЗАГРУЖЕН ===");
+        
+        const likeBtn = document.getElementById('like-button');
+        const likeCount = document.getElementById('like-count');
+        
+        if (!likeBtn) {
+            console.error("ОШИБКА: Кнопка не найдена!");
+            return;
+        }
+
+        const postId = likeBtn.getAttribute('data-post-id');
+        console.log("Кнопка найдена. ID поста:", postId);
+
+        likeBtn.addEventListener('click', function() {
+            console.log("=== КНОПКА НАЖАТА ===");
+            
+            // ИСПРАВЛЕНО: Убран /streamers/ из пути, так как в urls.py префикса нет
+            const url = `/${postId}/like/`; 
+            
+            // Получаем CSRF-токен
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+            console.log("Отправляем запрос на:", url);
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': csrfToken,
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                console.log("Ответ сервера:", response.status);
+                if (!response.ok) throw new Error('Ошибка сети');
+                return response.json();
+            })
+            .then(data => {
+                console.log("Данные от сервера:", data);
+                likeCount.textContent = data.likes;
+                likeBtn.classList.remove('btn-outline-dark');
+                likeBtn.classList.add('btn-danger', 'text-white');
+            })
+            .catch(error => {
+                console.error("ОШИБКА:", error);
+            });
+        });
+    });
+</script>
+{% endblock %}
