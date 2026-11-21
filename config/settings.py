@@ -1,16 +1,14 @@
 import os
 from pathlib import Path
 import dj_database_url
+import cloudinary
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Секретный ключ (на Render мы передадим его через Environment)
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-%44%h^zq1tl-+0e0x)_1^%1kde2cr&_4ehs_zh04%&ce&*-3wl')
 
-# Отладка (локально True, на Render передадим False)
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-# Разрешенные хосты (для Render ставим *)
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
@@ -20,12 +18,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'django.contrib.sitemaps',
     
-    #(Cloudinary)
-    'cloudinary_storage',
+    # Cloudinary (порядок важен: cloudinary, потом cloudinary_storage)
     'cloudinary',
+    'cloudinary_storage',
     
     'streamers.apps.StreamersConfig',  
     'taggit',                          
@@ -33,7 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # <--- ВАЖНО для стилей
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -61,7 +57,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Настройка БД (SQLite локально, PostgreSQL на Render)
 DATABASES = {
     'default': dj_database_url.config(
         default='sqlite:///db.sqlite3', 
@@ -86,19 +81,27 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Медиа (Аватарки) - будут храниться в Cloudinary
+# Медиа 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Настройки для Cloudinary 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME', 'oriwlykz'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY', '251821179778488'),
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET', 'Cs7sJ-WiaIgIkAuI96O6jVND22U')
 }
 
+# Явная конфигурация SDK 
+cloudinary.config(
+    cloud_name=CLOUDINARY_STORAGE['CLOUD_NAME'],
+    api_key=CLOUDINARY_STORAGE['API_KEY'],
+    api_secret=CLOUDINARY_STORAGE['API_SECRET'],
+    secure=True
+)
+
+# Хранилище для файлов 
 STORAGES = {
     "default": {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
@@ -108,8 +111,6 @@ STORAGES = {
     },
 }
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
 # Email 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -118,8 +119,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'winterfeelings081@gmail.com'  
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '') 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
-SITE_ID = 1
 
 LOGGING = {
     'version': 1,
