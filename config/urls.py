@@ -5,6 +5,7 @@ from django.urls import path, include
 from django.contrib.sitemaps.views import sitemap
 from streamers.sitemaps import PostSitemap, StaticViewSitemap
 
+# Регистрируем карты сайта
 sitemaps = {
     'posts': PostSitemap,
     'static': StaticViewSitemap,
@@ -13,9 +14,8 @@ sitemaps = {
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('streamers.urls')),
-    # Добавляем маршрут для карты сайта
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Раздаем медиа-файлы (картинки) ВСЕГДА, даже когда DEBUG=False
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
