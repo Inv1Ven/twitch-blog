@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     
-    # Облачное хранилище для картинок (Cloudinary)
+    #(Cloudinary)
     'cloudinary_storage',
     'cloudinary',
     
@@ -97,6 +97,15 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME', 'oriwlykz'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY', '251821179778488'),
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET', 'Cs7sJ-WiaIgIkAuI96O6jVND22U')
+}
+
+STORAGES = {
+    "default": {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
