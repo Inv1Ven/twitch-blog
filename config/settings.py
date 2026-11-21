@@ -1,7 +1,6 @@
 import os
 from pathlib import Path
 import dj_database_url
-import cloudinary
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -18,10 +17,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    # Cloudinary (порядок важен: cloudinary, потом cloudinary_storage)
-    'cloudinary',
-    'cloudinary_storage',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     
     'streamers.apps.StreamersConfig',  
     'taggit',                          
@@ -81,35 +78,11 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Медиа 
+# Медиа (Аватарки) - локальное хранение
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME', 'oriwlykz'),
-    'API_KEY': os.environ.get('CLOUDINARY_API_KEY', '251821179778488'),
-    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET', 'Cs7sJ-WiaIgIkAuI96O6jVND22U')
-}
-
-# Явная конфигурация SDK 
-cloudinary.config(
-    cloud_name=CLOUDINARY_STORAGE['CLOUD_NAME'],
-    api_key=CLOUDINARY_STORAGE['API_KEY'],
-    api_secret=CLOUDINARY_STORAGE['API_SECRET'],
-    secure=True
-)
-
-# Хранилище для файлов 
-STORAGES = {
-    "default": {
-        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
-    },
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
 
 # Email 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -119,6 +92,8 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'winterfeelings081@gmail.com'  
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '') 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+SITE_ID = 1
 
 LOGGING = {
     'version': 1,
