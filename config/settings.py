@@ -20,6 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'streamers.apps.StreamersConfig',  
     'taggit',                          
 ]
@@ -90,3 +92,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Email (заглушка для консоли)
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'noreply@twitchblog.com'
+
+SITE_ID = 1
