@@ -20,7 +20,7 @@ def generate_posts():
 
     print("Начинаем генерацию постов...")
 
-     streamers = [
+    streamers = [
         ("Bratishkinoff", "Король СНГ-стриминга...", "https://www.twitch.tv/bratishkinoff", ["СНГ", "Хайп", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/bratishkin.jpg"),
         ("Buster", "Легенда...", "https://www.twitch.tv/buster", ["СНГ", "Олдскул"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/buster.jpg"),
         ("StRoGo", "Ворвался в мировой топ-10...", "https://www.twitch.tv/strogo", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Strogo.jpg"),
