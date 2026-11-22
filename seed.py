@@ -21,22 +21,22 @@ def generate_posts():
     print("Начинаем генерацию постов...")
 
     streamers = [
-        ("Bratishkinoff", "Король СНГ-стриминга...", "https://www.twitch.tv/bratishkinoff", ["СНГ", "Хайп", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/bratishkin.jpg"),
-        ("Buster", "Легенда...", "https://www.twitch.tv/buster", ["СНГ", "Олдскул"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/buster.jpg"),
-        ("StRoGo", "Ворвался в мировой топ-10...", "https://www.twitch.tv/strogo", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Strogo.jpg"),
-        ("Stariy_Bog", "Ночные стримы...", "https://www.twitch.tv/stariy_bog", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/stariy.jpg"),
-        ("m3wsu", "4к ELO в CS2...", "https://www.twitch.tv/m3wsu", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/m3wsu.jpg"),
-        ("mokrivskyi", "Забрал сердца...", "https://www.twitch.tv/mokrivskyi", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/mokrivskyi.jpg"),
-        ("zxcursed", "Самый скандальный...", "https://www.twitch.tv/zxcursed", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/zxcursed.jpg"),
-        ("Deko", "Главное лицо CS2...", "https://www.twitch.tv/deko", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/deko.jpg"),
-        ("des0ut", "Утренний стример...", "https://www.twitch.tv/des0ut", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/des0ut.jpg"),
-        ("Nix", "Голос Dota 2...", "https://www.twitch.tv/nix", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Nix.jpg"),
-        ("ALOHADANCE", "Король непредсказуемости...", "https://www.twitch.tv/alohadance", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/ALOHADANCE.jpg"),
-        ("Iceberg", "Не боится говорить...", "https://www.twitch.tv/iceberg", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/iceberg.jpg"),
-        ("RAMZES666", "Титулованный про-игрок...", "https://www.twitch.tv/ramzes666", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/ramzes.jpg"),
-        ("SilverName", "Легенда Hearthstone...", "https://www.twitch.tv/silvername", ["СНГ", "Hearthstone"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/silvername.jpg"),
-        ("PashaBiceps", "Поляк с сердцем...", "https://www.twitch.tv/pashabiceps", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/pashabiceps.jpg"), # <--- Теперь тут Паша
-        ("s1mple", "Величайший игрок...", "https://www.twitch.tv/s1mple", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/S1mple.jpg"),
+        ("Bratishkinoff", "Король СНГ-стриминга...", "https://www.twitch.tv/bratishkinoff", ["СНГ", "Хайп", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/bratishkin.jpg.jpg"),
+        ("Buster", "Легенда...", "https://www.twitch.tv/buster", ["СНГ", "Олдскул"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/buster.jpg.jpg"),
+        ("StRoGo", "Ворвался в мировой топ-10...", "https://www.twitch.tv/strogo", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Strogo.jpg.jpg"),
+        ("Stariy_Bog", "Ночные стримы...", "https://www.twitch.tv/stariy_bog", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/stariy.jpg.jpg"),
+        ("m3wsu", "4к ELO в CS2...", "https://www.twitch.tv/m3wsu", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/m3wsu.jpg.jpg"),
+        ("mokrivskyi", "Забрал сердца...", "https://www.twitch.tv/mokrivskyi", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/mokrivskyi.jpg.jpg"),
+        ("zxcursed", "Самый скандальный...", "https://www.twitch.tv/zxcursed", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/zxcursed.jpg.jpg"),
+        ("Deko", "Главное лицо CS2...", "https://www.twitch.tv/deko", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/deko.jpg.jpg"),
+        ("des0ut", "Утренний стример...", "https://www.twitch.tv/des0ut", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/des0ut.jpg.jpg"),
+        ("Nix", "Голос Dota 2...", "https://www.twitch.tv/nix", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Nix.jpg.jpg"),
+        ("ALOHADANCE", "Король непредсказуемости...", "https://www.twitch.tv/alohadance", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/ALOHADANCE.jpg.jpg"),
+        ("Iceberg", "Не боится говорить...", "https://www.twitch.tv/iceberg", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/iceberg.jpg.jpg"),
+        ("RAMZES666", "Титулованный про-игрок...", "https://www.twitch.tv/ramzes666", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/ramzes.jpg.jpg"),
+        ("SilverName", "Легенда Hearthstone...", "https://www.twitch.tv/silvername", ["СНГ", "Hearthstone"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/silvername.jpg.jpg"),
+        ("PashaBiceps", "Поляк с сердцем...", "https://www.twitch.tv/pashabiceps", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/pashabiceps.jpg.jpg"),
+        ("s1mple", "Величайший игрок...", "https://www.twitch.tv/s1mple", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/S1mple.jpg.jpg"),
     ]
 
     count = 0
