@@ -10,12 +10,17 @@
             <div class="card shadow-sm mb-4 border-0">
                 <div class="card-body p-4">
                     <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
-                        <!-- Аватар (круглый) -->
+                        
+                        <!-- Аватар (КРУГЛЫЙ) -->
                         {% if post.avatar %}
-    <img src="{{ post.avatar }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
-{% else %}
-    <div class="bg-secondary text-white text-center py-5" style="height: 200px;">Нет фото</div>
-{% endif %}
+                            <img src="{{ post.avatar }}" alt="{{ post.title }}" class="rounded-circle me-md-4 mb-3 mb-md-0 shadow" 
+                                 style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #6441a5; flex-shrink: 0;">
+                        {% else %}
+                            <div class="rounded-circle me-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center bg-secondary text-white shadow" 
+                                 style="width: 150px; height: 150px; font-size: 40px; flex-shrink: 0;">
+                                {{ post.title|first }}
+                            </div>
+                        {% endif %}
 
                         <!-- Инфо о стримере -->
                         <div class="flex-grow-1 text-center text-md-start">
@@ -29,8 +34,8 @@
                                 {% endfor %}
                             </div>
 
-                            <!-- Кнопки действия -->
-                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2 mt-3">
+                            <!-- Кнопки действия (ИСПРАВЛЕНЫ) -->
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-2 mt-3">
                                 {% if post.twitch_url %}
                                     <a href="{{ post.twitch_url }}" target="_blank" class="btn btn-danger shadow-sm px-4">
                                         <i class="fab fa-twitch me-2"></i> Смотреть на Twitch
@@ -132,7 +137,7 @@
         likeBtn.addEventListener('click', function() {
             console.log("=== КНОПКА НАЖАТА ===");
             
-            // ИСПРАВЛЕНО: Убран /streamers/ из пути, так как в urls.py префикса нет
+            // Путь к лайку
             const url = `/${postId}/like/`; 
             
             // Получаем CSRF-токен
