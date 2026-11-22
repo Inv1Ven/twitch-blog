@@ -26,7 +26,7 @@ def generate_posts():
         ("StRoGo", "Ворвался в мировой топ-10...", "https://www.twitch.tv/strogo", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Strogo.jpg"),
         ("Stariy_Bog", "Ночные стримы...", "https://www.twitch.tv/stariy_bog", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/stariy.jpg"),
         ("m3wsu", "4к ELO в CS2...", "https://www.twitch.tv/m3wsu", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/m3wsu.jpg"),
-        ("mokrivskyi", "Забрал сердца...", "https://www.twitch.tv/mokrivskyi", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/mokrivskiy.jpg"),
+        ("mokrivskyi", "Забрал сердца...", "https://www.twitch.tv/mokrivskyi", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/mokrivskiy.jpg.jpg"),
         ("zxcursed", "Самый скандальный...", "https://www.twitch.tv/zxcursed", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/zxcursed.jpg"),
         ("Deko", "Главное лицо CS2...", "https://www.twitch.tv/deko", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/deko.jpg"),
         ("des0ut", "Утренний стример...", "https://www.twitch.tv/des0ut", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/des0ut.jpg"),
