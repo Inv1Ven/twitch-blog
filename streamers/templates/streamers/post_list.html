@@ -19,10 +19,10 @@
                 <div class="card h-100 shadow-sm">
                     <!-- Аватарка -->
                     {% if post.avatar %}
-                        <img src="{{ post.avatar.url }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
-                    {% else %}
-                        <div class="bg-secondary text-white text-center py-5" style="height: 200px;">Нет фото</div>
-                    {% endif %}
+    <img src="{{ post.avatar }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
+{% else %}
+    <div class="bg-secondary text-white text-center py-5" style="height: 200px;">Нет фото</div>
+{% endif %}
                     
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }}</h5>

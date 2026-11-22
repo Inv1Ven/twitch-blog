@@ -12,12 +12,10 @@
                     <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
                         <!-- Аватар (круглый) -->
                         {% if post.avatar %}
-                            <img src="{{ post.avatar.url }}" alt="{{ post.title }}" class="rounded-circle me-md-4 mb-3 mb-md-0 shadow" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #6441a5;">
-                        {% else %}
-                            <div class="rounded-circle me-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center bg-secondary text-white shadow" style="width: 150px; height: 150px; font-size: 40px;">
-                                {{ post.title|first }}
-                            </div>
-                        {% endif %}
+    <img src="{{ post.avatar }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
+{% else %}
+    <div class="bg-secondary text-white text-center py-5" style="height: 200px;">Нет фото</div>
+{% endif %}
 
                         <!-- Инфо о стримере -->
                         <div class="flex-grow-1 text-center text-md-start">
