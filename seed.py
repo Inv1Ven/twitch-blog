@@ -20,13 +20,16 @@ def generate_posts():
 
     print("Начинаем генерацию постов...")
 
+    Post.objects.all().delete()
+    print("Старая база очищена.")
+
     streamers = [
         ("Bratishkinoff", "Король СНГ-стриминга...", "https://www.twitch.tv/bratishkinoff", ["СНГ", "Хайп", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/bratishkin.jpg.jpg"),
         ("Buster", "Легенда...", "https://www.twitch.tv/buster", ["СНГ", "Олдскул"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/buster.jpg.jpg"),
         ("StRoGo", "Ворвался в мировой топ-10...", "https://www.twitch.tv/strogo", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/Strogo.jpg.jpg"),
         ("Stariy_Bog", "Ночные стримы...", "https://www.twitch.tv/stariy_bog", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/stariy.jpg.jpg"),
         ("m3wsu", "4к ELO в CS2...", "https://www.twitch.tv/m3wsu", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/m3wsu.jpg.jpg"),
-        ("mokrivskyi", "Забрал сердца...", "https://www.twitch.tv/mokrivskyi", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/mokrivskyi.jpg"),
+        ("mokrivskyi", "Забрал сердца...", "https://www.twitch.tv/mokrivskyi", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/mokrivskyi.jpg.jpg"), 
         ("zxcursed", "Самый скандальный...", "https://www.twitch.tv/zxcursed", ["СНГ", "Dota 2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/zxcursed.jpg.jpg"),
         ("Deko", "Главное лицо CS2...", "https://www.twitch.tv/deko", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/deko.jpg.jpg"),
         ("des0ut", "Утренний стример...", "https://www.twitch.tv/des0ut", ["СНГ", "CS2"], "https://raw.githubusercontent.com/Inv1Ven/twitch-blog/main/static_avatars/des0ut.jpg.jpg"),
@@ -42,11 +45,7 @@ def generate_posts():
     count = 0
 
     for title, content, twitch_url, tags_list, avatar_url in streamers:
-        if Post.objects.filter(title=title).exists():
-            print(f"{title} уже существует, пропускаем.")
-            count += 1
-            continue
-
+        # Проверка на существование УБРАНА, так как мы всё удалили выше
         slug = f"{slugify(title)}-{count}"
         
         post = Post.objects.create(
@@ -60,7 +59,7 @@ def generate_posts():
             publish=timezone.now() - timedelta(days=count)
         )
         post.tags.set(tags_list)
-        print(f"{title} добавлен.")
+        print(f"[{count+1}/16] {title} добавлен.")
         count += 1
 
     print(f"Готово! Обработано {count} стримеров.")
