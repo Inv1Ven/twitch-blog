@@ -81,7 +81,11 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{% url 'streamers:post_list' %}">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'streamers:latest_feed' %}"><i class="fas fa-rss"></i> RSS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/admin/">Админка</a></li>
+                    
+                    <!-- Кнопка Админка видна только сотрудникам -->
+                    {% if user.is_staff %}
+                        <li class="nav-item"><a class="nav-link" href="/admin/"><i class="fas fa-user-shield"></i> Админка</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
